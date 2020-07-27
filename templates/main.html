@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+</head>
+<body>
+        <form action="{% url 'about' %}">
+            <input type="submit" value="About Page">
+        </form>
+        <form action="{% url 'count' %}">
+            <textarea name="texts" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Count"></form> 
+            <p> {{result}} </p>
+
+
+
+</body>
+</html> 

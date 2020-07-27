@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+</head>
+<body>
+    <h1>Result: </h1><p> {{result}} </p></br>
+
+    <h1>Most Used Words</h1>
+</br>
+    {% for word,total in mostWord %}
+
+    <p> {{word}} - {{total}}  </p>
+    {% endfor %}
+
+    <a href="{% url 'mainPage' %}">Again</a>
+</body>
+</html>
